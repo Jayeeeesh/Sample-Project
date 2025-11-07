@@ -21,3 +21,11 @@ function checkCountValue() {
 function displayCount() {
   document.getElementById('countDisplay').innerHTML = count;
 }
+function resetCount() {
+  count = 0; // Reset count to 0
+  displayCount(); // Update the displayed count
+
+  if (confirm("Do you want to reset the follower count?")) {
+    alert("Follower count has been reset.");
+  }
+}
